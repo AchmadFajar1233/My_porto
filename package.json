@@ -1,0 +1,14 @@
+{
+  "name": "my-porto",
+  "version": "1.0.0",
+  "description": "this is my portofolio",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "achmad fajar",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
