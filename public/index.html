@@ -1,77 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../src/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Notable&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achmad Fajar Nugraha</title>
+  <link rel="stylesheet" href="../src/output.css">
 </head>
-<body class="bg-zinc-900 relative">
-    <header class="xl:h-screen xl:w-screen xl:px-8 py-4 xl:grid xl:grid-cols-header xl:grid-rows-4 xl:gap-4">
-        <nav class="rounded-xl overflow-hidden xl:col-start-1 xl:row-start-1 xl:row-end-6 bg-gradient-to-tr from-[#2f3283]">
-            <ul class="w-full h-full grid grid-cols-1 grid-rows-4">
-                <li class="flex justify-center items-center"><a href="" class="flex flex-col justify-center items-center"><img src="../assets/icons/home_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p class="text-secondary">Home</p></a></li>
-                <li class="flex justify-center items-center"><a href="" class="flex flex-col justify-center items-center"><img src="../assets/icons/person_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p class="text-secondary">About Me</p></a></li>
-                <li class="flex justify-center items-center"><a href="" class="flex flex-col justify-center items-center"><img src="../assets/icons/contacts_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p class="text-secondary">Contact Me</p></a></li>
-                <li class="flex justify-center items-center"><a href="" class="flex flex-col justify-center items-center"><img src="../assets/icons/folder_open_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p class="text-secondary">My Project</p></a></li>
+<body class="overflow-x-hidden">
+    <div class="wrapper xl:w-screen xl:min-h-screen h-full bg-primary xl:px-16 px-16 py-8 relative">
+      <header class="flex flex-col h-screen">
+        <div class="xl:min-h-20 flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-secondary xl:text-2xl uppercase font-bold">Achmad Fajar</h2>
+          </div>
+          <nav class="hidden md:block">
+            <ul class="flex gap-8">
+              <li><a href="#" class="text-secondary">About Me</a></li>
+              <li><a href="#" class="text-secondary">My Plan</a></li>
+              <li><a href="#" class="text-secondary">Contact Me</a></li>
             </ul>
-        </nav>
-        <section class="xl:col-start-2 xl:col-end-5 row-start-1 xl:row-end-4 rounded-xl bg-gradient-to-tr from-[#2f3283] relative flex justify-center items-center flex-col overflow-hidden">
-            <h1 class="text-7xl font-limeLight font-bold text-secondary">Bold Ideas,</h1>
-            <div class="xl:translate-x-16">
-                <p class="text-4xl font-sans text-[#f5f5f5] uppercase font-extrabold">Timeless Elegance.</p>
+          </nav>
+          <!-- hamburger menu -->
+          <div class="md:hidden cursor-pointer" id="hamburger">
+            <div class="w-8 h-1 bg-secondary mb-1 transition-transform ease-in-out" id="hamburger-1"></div>
+            <div class="w-8 h-1 bg-secondary transition-transform ease-in-out" id="hamburger-2"></div>
+          </div>
+        </div>
+        <!-- main header -->
+        <div class="flex-1 flex justify-center items-center xl:px-20 flex-col">
+          <div class="border boder-[#029e83] xl:p-4 p-2 rounded-md hover:bg-gradient-to-tr hover:from-[#029e83] hover:to-[#063648] hover:border-transparent transition-colors duration-300 cursor-default ease-out">
+            <h1 class="text-secondary xl:text-md text-sm uppercase">About Me</h1>
+          </div>
+           <!-- card section -->
+          <div class="flex flex-col md:flex-row md:justify-normal  justify-around items-center min-h-[80%] xl:w-[80%] md:max-h-[40%]xl:p-8 bg-gradient-to-r from-[#029e83] to-[#063648] rounded-xl mt-10 md:p-8">
+            <div class="md:w-1/2 md:h-[50%] w-40 h-40 md:rounded-md rounded-full" style="background-image: url('../assets/4372911.jpg'); background-position: center; background-size: cover;">
             </div>
-            <div class="xl:translate-y-20 xl:translate-x-80 -rotate-6">
-                <p class="text-secondary bg-clip-text text-transparent bg-gradient-to-r from-secondary font-limeLight mt-4 text-4xl animate-scrollInfinite">"I believe in the power of thoughtful design, blending creativity and technology to solve complex problems.</p>
-            </div>
-        </section>
-        <section class="xl:row-start-1 xl:row-end-4 rounded-xl bg-gradient-to-tr from-[#4389da] flex justify-center flex-col items-center xl:px-6 xl:py-4">
-            <div class="rounded-full w-40 h-40 bg-center bg-cover shadow-zinc-900 shadow-lg" style="background-image: url('../assets/4372911.jpg');">
-            </div>
-            <div>
-                <p class="text-secondary font-semibold mt-4">Hi, I’m fajar, a passionate design and web developer specializing front-end.</p>
-                <p class="text-secondary font-semibold mt-2">With many years of experience, I’ve worked on many project, delivering impactful solutions for clients worldwide.</p>
-                <div class="relative group mt-4">
-                    <button
-                      class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
-                    >
-                      <span
-                        class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                      ></span>
-                
-                      <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
-                        <div class="relative z-10 flex items-center space-x-2">
-                          <span class="transition-all duration-500 group-hover:translate-x-1"
-                            >Let's get started</span
-                          >
-                          <svg
-                            class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
-                            data-slot="icon"
-                            aria-hidden="true"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              clip-rule="evenodd"
-                              d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
-                              fill-rule="evenodd"
-                            ></path>
-                          </svg>
-                        </div>
-                      </span>
-                    </button>
-                  </div>
-            </div>
-        </section>
-        <section class="xl:col-start-2 xl:col-end-6 xl:row-start-4 xl:row-end-5 rounded-xl bg-gradient-to-r from-[#4389da]">
-            section-other
-        </section>
-    </header>
 
+            <div class="w-full flex justify-center items-center px-8">
+              <p class="text-secondary">"Hi, I’m Fajar, an aspiring web developer with a strong passion for creating seamless user experiences. With several online certifications and local projects completed, I'm continuously building my skills in front-end development and UX/UI design. My goal is to contribute to impactful projects and keep growing in the web development field."</p>
+          </div> 
+        </div>
+        </div>
+      </header>
+    </div>
     <script src="script.js"></script>
 </body>
-</ht
+</html>

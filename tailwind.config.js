@@ -4,8 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#0f172a",
-        secondary: "#e2e8f0",
+        primary: "#030712",
+        secondary: "#e2f0ff",
+        abuAabu: "#32343c",
+        kuning: "#d8a31a",
+        optional: "#063648"
+
       },
       fontFamily: {
         notable: ['Notable', 'sans-serif'],
