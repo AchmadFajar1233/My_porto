@@ -1,10 +1,11 @@
-const hamburger = document.getElementById('hamburger')
-const hamburger1 =  document.getElementById("hamburger-1")
-const hamburger2 =  document.getElementById("hamburger-2")
+const hamburgerMenu = document.getElementById("hamburgerIcon");
+const hamburger1 = document.getElementById("hamburger1");
+const hamburger2 = document.getElementById("hamburger2");
+const nav = document.querySelector('nav')
 
-hamburger.addEventListener("click", ()=>{
-    hamburger1.classList.toggle("rotate-45")
-    hamburger1.classList.toggle("translate-y-1")
-    hamburger2.classList.toggle("-rotate-45")
-    hamburger2.classList.toggle("-translate-y-1")
+hamburgerMenu.addEventListener('click', () =>{
+    hamburger1.classList.toggle('rotate-[23deg]')
+    hamburger2.classList.toggle('-rotate-[23deg]')
+
+    nav.classList.toggle('-translate-y-full')
 })

@@ -11,11 +11,6 @@ module.exports = {
         optional: "#063648"
 
       },
-      fontFamily: {
-        notable: ['Notable', 'sans-serif'],
-        maguntia: ["UnifrakturMaguntia", "cursive"],
-        limeLight: ["Limelight", "sans-serif"]
-      },
       gridTemplateColumns: {
         header: '1fr, 2fr, 2fr, 2fr 2fr'
       },

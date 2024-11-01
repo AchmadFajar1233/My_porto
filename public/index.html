@@ -6,43 +6,46 @@
   <title>Achmad Fajar Nugraha</title>
   <link rel="stylesheet" href="../src/output.css">
 </head>
-<body class="overflow-x-hidden">
-    <div class="wrapper xl:w-screen xl:min-h-screen h-full bg-primary xl:px-16 px-16 py-8 relative">
-      <header class="flex flex-col h-screen">
-        <div class="xl:min-h-20 flex justify-between items-center mb-6">
-          <div>
-            <h2 class="text-secondary xl:text-2xl uppercase font-bold">Achmad Fajar</h2>
-          </div>
-          <nav class="hidden md:block">
-            <ul class="flex gap-8">
-              <li><a href="#" class="text-secondary">About Me</a></li>
-              <li><a href="#" class="text-secondary">My Plan</a></li>
-              <li><a href="#" class="text-secondary">Contact Me</a></li>
-            </ul>
-          </nav>
-          <!-- hamburger menu -->
-          <div class="md:hidden cursor-pointer" id="hamburger">
-            <div class="w-8 h-1 bg-secondary mb-1 transition-transform ease-in-out" id="hamburger-1"></div>
-            <div class="w-8 h-1 bg-secondary transition-transform ease-in-out" id="hamburger-2"></div>
-          </div>
-        </div>
-        <!-- main header -->
-        <div class="flex-1 flex justify-center items-center xl:px-20 flex-col">
-          <div class="border boder-[#029e83] xl:p-4 p-2 rounded-md hover:bg-gradient-to-tr hover:from-[#029e83] hover:to-[#063648] hover:border-transparent transition-colors duration-300 cursor-default ease-out">
-            <h1 class="text-secondary xl:text-md text-sm uppercase">About Me</h1>
-          </div>
-           <!-- card section -->
-          <div class="flex flex-col md:flex-row md:justify-normal  justify-around items-center min-h-[80%] xl:w-[80%] md:max-h-[40%]xl:p-8 bg-gradient-to-r from-[#029e83] to-[#063648] rounded-xl mt-10 md:p-8">
-            <div class="md:w-1/2 md:h-[50%] w-40 h-40 md:rounded-md rounded-full" style="background-image: url('../assets/4372911.jpg'); background-position: center; background-size: cover;">
-            </div>
+<body class="bg-primary relative">
+  <div class="overflow-y-hidden">
+    <header class="px-8 py-6 flex w-full items-center justify-between xl:px-16 xl:py-8">
+      <div><h2 class="text-kuning uppercase font-bold">Achmad Fajar Nugraha</h2></div>
+      <nav class="absolute right-0 top-0 w-screen h-screen bg-gradient-to-br from-[#006973] to-primary -translate-y-full transition-all duration-400 ease-in-out">
+        <ul class="flex flex-col text-center justify-evenly items-center w-full h-full">
+          <li><a href="#" class="text-secondary hover:text-kuning transition-colors duration-200 ease-in-out">About Me</a></li>
+          <li><a href="#" class="text-secondary hover:text-kuning transition-colors duration-200 ease-in-out">My Planing</a></li>
+          <li><a href="#" class="text-secondary hover:text-kuning transition-colors duration-200 ease-in-out">My project</a></li>
+        </ul>
+      </nav>
+      <div class="hidden xl:block">
+        <ul class="flex gap-6">
+          <li><a href="#" class="text-secondary hover:text-kuning transition-colors duration-200 ease-in-out">About Me</a></li>
+          <li><a href="#" class="text-secondary hover:text-kuning transition-colors duration-200 ease-in-out">My Planing</a></li>
+          <li><a href="#" class="text-secondary hover:text-kuning transition-colors duration-200 ease-in-out">My project</a></li>          
+        </ul>
+      </div>
+      <!-- hamburger menu -->
+      <div id="hamburgerIcon" class="cursor-pointer z-10 xl:hidden">
+        <div id="hamburger1" class="w-[3rem] h-[2px] bg-secondary mb-4  origin-top-left transition-all duration-200 ease-in-out"></div>
+        <div id="hamburger2" class="w-[3rem] h-[2px] bg-secondary  origin-bottom-left transition-all duration-200 ease-in-out"></div>
+      </div>
+    </header>
+    <!-- main section -->
+     <main class="flex-4 px-8 py-6 flex flex-col justify-center items-center xl:px-16 xl:py-8">
+      <h2 class="text-secondary uppercase text-xl mb-4 font-extrabold bg-gradient-to-br from-[#006973] to-secondary bg-clip-text text-transparent">About Me</h2>
 
-            <div class="w-full flex justify-center items-center px-8">
-              <p class="text-secondary">"Hi, I’m Fajar, an aspiring web developer with a strong passion for creating seamless user experiences. With several online certifications and local projects completed, I'm continuously building my skills in front-end development and UX/UI design. My goal is to contribute to impactful projects and keep growing in the web development field."</p>
-          </div> 
+        <div id="aboutMe" class="bg-gradient-to-br from-[#006973] rounded-xl min-h-80 flex flex-col items-center px-4 py-2 gap-6 md:flex-row xl:w-[70%]">
+          <div class="mt-4 md:mt-0 rounded-full w-40 h-40 bg-center bg-cover md:rounded-lg" style="background-image: url('../assets/4372911.jpg');">
+          </div>
+          <div style="flex: 4;" class="mb-4 md:mb-0">
+            <h2 class="text-center text-kuning font-bold uppercase my-4 xl:my-0 md:text-start">aspiring Web Developer</h2>
+            <p class="text-secondary text-center md:text-start">"Hi, I’m <span class="text-kuning">Fajar</span>, an aspiring web developer with a strong passion for creating seamless user experiences. With several online certifications and local projects completed, I'm continuously building my skills in front-end development and UX/UI design. My goal is to contribute to impactful projects and keep growing in the web development field."</p>
+          </div>
         </div>
-        </div>
-      </header>
-    </div>
-    <script src="script.js"></script>
+  
+     </main>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
